@@ -1,0 +1,11 @@
+## Interface: 70200
+## Title: RealUI Infobar Block - Memory Usage
+## Author: Øyvind Robertsen
+## Version: 0.1
+
+libs/LibStub.lua
+libs/CallbackHandler-1.0.lua
+libs/LibDataBroker-1.1.lua
+libs/LibQTip-1.0.lua
+
+init.lua
