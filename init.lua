@@ -5,6 +5,7 @@ local totalMemoryUsage = 0
 local addons = {}
 
 local function InitAddonList()
+    UpdateAddOnMemoryUsage()
 	for i = 1, GetNumAddOns() do
 		local u = GetAddOnMemoryUsage(i)
 		totalMemoryUsage = totalMemoryUsage + u
@@ -15,6 +16,7 @@ end
 InitAddonList()
 
 local function UpdateAddonList()
+    UpdateAddOnMemoryUsage()
 	totalMemoryUsage = 0
 	for i = 1, GetNumAddOns() do
 		local u = GetAddOnMemoryUsage(i)
